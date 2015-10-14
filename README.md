@@ -40,4 +40,4 @@ You'll need the following software ready (If you are having issues, don't worry 
 
 ## Step 5 - Add interactivity with tooltip (popup)
 
-## Step 5 - Push your own map to github.
+## Step 6 - Push your own map to github.
