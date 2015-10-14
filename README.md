@@ -1,4 +1,5 @@
 # QGIS to Leaflet
+##This repo will be ready Thursday morning 10.14.2015
 We'll take a look at the [LA County data on Locations / Points of Interest](http://egis3.lacounty.gov/dataportal/2014/07/07/locationspoints-of-interest-lms-data/) and see what can be mapped using [Leaflet](http://leafletjs.com/).
 
 Our main goal is to map certain data points from the LMS Data in the cities within LA County with the following:
