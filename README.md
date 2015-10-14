@@ -12,6 +12,7 @@ Our main goal is to map certain data points from the LMS Data in the cities with
 3. Leaflet 101, Webmap basics
 4. Upload your map to Github for live hosting!
 
+##What you'll need to install
 You'll need the following software ready (If you are having issues, don't worry we'll help you through it):
 
 - [QGIS](http://qgis.org/en/site/) | Free Open Source Geographic Information System
