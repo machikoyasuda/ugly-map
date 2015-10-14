@@ -8,10 +8,9 @@ Our main goal is to map certain data points from the LMS Data in the cities with
 * Styling the fields to highlight certain values using the RULE-BASED Styling (It's kind of like using functions in excel)
 * Use a plugin like [OpenLayers](https://plugins.qgis.org/plugins/openlayers_plugin/) to add a base layer like Google Maps or Stamen Maps
 * Select features using expressions (functions) and save the selected as geojson files to be loaded on leaflet
-2.Load up the python [SimpleHTTPServer](http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/) for local hosting your map
-3.Webmap basics - Raster Tiles, Vector Tiles, Zoom levels
-4.Leaflet 101
-5.Upload your map to Github for live hosting!
+2. Load up the python [SimpleHTTPServer](http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/) for local hosting your map
+3. Leaflet 101, Webmap basics
+4. Upload your map to Github for live hosting!
 
 You'll need the following software ready (If you are having issues, don't worry we'll help you through it):
 
