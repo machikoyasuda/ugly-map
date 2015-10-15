@@ -1,5 +1,7 @@
 # QGIS to Leaflet
-##This repo will be ready Thursday morning 10.14.2015
+###This repo is ready to be forked
+
+![alt text](https://raw.githubusercontent.com/cityhubla/mapstarter_lacounty/master/images/cover.PNG)
 We'll take a look at the [LA County data on Locations / Points of Interest](http://egis3.lacounty.gov/dataportal/2014/07/07/locationspoints-of-interest-lms-data/) and see what can be mapped using [Leaflet](http://leafletjs.com/).
 
 Our main goal is to map certain data points from the LMS Data in the cities within LA County with the following:
@@ -33,6 +35,7 @@ You'll need the following software ready (If you are having issues, don't worry 
  -Mac Users: Install [GitHub Desktop](https://desktop.github.com/)
 
 ## Step 1 - Load, style your spatial data in QGIS
+![alt text](https://raw.githubusercontent.com/cityhubla/mapstarter_lacounty/master/images/step_1A.PNG)
 - Adding Data | Let's add the city boundaries (as a shapefile) and County location data (as a geodatabase) from the folder labeled `step 1`
  - You can drag and drop or use the `add vector layer` command under the layer menu of the top menu bar
 - Styling Data | Now that the data is loaded we can color style the way the map looks for your studies
