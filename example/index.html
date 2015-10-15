@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maptime LA: Food Locations</title>
+	<meta charset="utf-8" />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    
+<style>
+    body { margin: 0; padding: 0;}
+    #map { position:fixed; top:0; bottom:0; width:100%; }
+</style>
+    
+</head>
+    
+<body>
+	
+    <div id="map"></div>
+
+<script>
+        
+var map = L.map('map')//This creates the map in the HTML div labeld "map"
+.setView([34.052234, -118.243685], 10); //This sets the location of map and the zoom setting
+
+//Adds a baselayer to map
+var stamen = L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png').addTo(map);
+   
+//Adds geojson to variables to be called by Leaflet to add to the map
+var cityboundaries="data/lacounty_cities.geojson";
+var foodlocations="data/food_locations.geojson";
+        
+//Styles and loads the City Boundaries | Can also be used to load polygons and lines
+$.getJSON(cityboundaries, function(data) {
+var cityLayer = L.geoJson(data, {
+        style:{
+        fillColor:"#000",
+        color: "#FFF",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.5,
+        clickable: false
+        }
+}).addTo(map);
+});
+        
+//Styles and loads the Locations | Can also be used to load points
+$.getJSON(foodlocations, function(data) {
+var foodLayer = L.geoJson(data, {
+    pointToLayer: function(feature, latlon) {
+    return L.circleMarker(latlon,
+        {
+        fillColor:colorFunc(feature.properties.cat2),
+        color: '#000',
+        weight: 0,
+        opacity: 0,
+        fillOpacity: 0.8,
+        radius: 5
+        }
+        ).bindPopup("<h2>"+feature.properties.Name+"</h2>"+feature.properties.addrln1+"<p>"+feature.properties.description+"</p>");
+    }
+}).addTo(map);
+});
+
+//Function to filter food location types
+function colorFunc(d) {
+    var d = String(d);
+    return d == 'Food Assistance' ? "#2cabff" :
+    "#ff6cd9";
+ }
+
+</script>
+</body>
+</html>
