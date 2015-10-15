@@ -29,10 +29,10 @@ You'll need the following software ready (If you are having issues, don't worry 
 - [Python](https://www.python.org/) | It's a programming language that has valuable tools and commands to help you build your maps like locally hosting your map on your computer with a command called <code>SimpleHTTPServer</code>
  - Windows Users: Download Python 2.7.10 ([Direct Link](https://www.python.org/downloads/)). During the install, in the setup labeled "Customize Python", scroll down to the feature "Add python.exe to Path" and select "Will be installed on local hard drive." This will allow you to call python commands when you are using your command terminal.
  - Mac Users : Python is already installed and you can call python when in terminal.
--Github | Is a coding repository service that manages your code and data
- -[Sign-up for a free account!](https://github.com/), This will allow you to fork (essentially copy) this repository to your computer and you can push your code and map to your account online to be hosted live!
- -Windows Users: Install [GitHub Desktop](https://desktop.github.com/). 
- -Mac Users: Install [GitHub Desktop](https://desktop.github.com/)
+- Github | Is a coding repository service that manages your code and data
+ - [Sign-up for a free account!](https://github.com/), This will allow you to fork (essentially copy) this repository to your computer and you can push your code and map to your account online to be hosted live!
+ - Windows Users: Install [GitHub Desktop](https://desktop.github.com/). 
+ - Mac Users: Install [GitHub Desktop](https://desktop.github.com/)
 
 ## Step 1 - Load, style your spatial data in QGIS
 ![alt text](https://raw.githubusercontent.com/cityhubla/mapstarter_lacounty/master/images/step_1A.PNG)
