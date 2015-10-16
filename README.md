@@ -73,3 +73,13 @@ You'll need the following software ready (If you are having issues, don't worry 
 
 ## Step 6 - Push your own map to github.
 - In this step we will push our map to our github account
+
+- `git clone https://github.com/cityhubla/mapstarter_lacounty`
+- Go back to github.com and create your own repository
+- `git remote add machiko https://github.com/machikoyasuda/ugly-map.git` (Your URL will be different)
+- Origin is cityhubla/mapstarter_lacounty. You are creating your own on your own account.
+- `git push -u machiko master` and pushing your edits into your master
+- `git checkout -b gh-pages` create a new gh-pages branch
+- `git rebase master` make sure to copy down the latest master onto this branch.
+- `git push machiko gh-pages` push up the latest to the gh-pages on your account
+- it should now be here: http://machikoyasuda.github.io/ugly-map/
